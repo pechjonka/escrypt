@@ -18,7 +18,7 @@ def encryption(file, password):
     )
     
     # show info about processing
-    print("[File '" + str(os.path.splitext(file)[0]) + "' escryptes]")
+    print("[File '" + str(os.path.splitext(file)[0]) + "' escrypted]")
 
     # delete origin file
     os.remove(file)

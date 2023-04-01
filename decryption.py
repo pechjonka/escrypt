@@ -17,7 +17,7 @@ def decryption(file, password):
     )
     
     # show info about processing
-    print("[File '" + str(os.path.splitext(file)[0]) + "' decryptes]")
+    print("[File '" + str(os.path.splitext(file)[0]) + "' decrypted]")
 
     # delete origin file
     os.remove(file)
