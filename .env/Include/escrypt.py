@@ -2,7 +2,6 @@ import pyAesCrypt
 import os
 
 # enscrypt function
-
 def encryption(file, password):
     
     # buffer size
@@ -39,5 +38,5 @@ def foldersScaning(dir, password):
         else:
             foldersScaning(path, password)
             
-password = input("Your password is: ")
-foldersScaning("C:\Users\Карина\Desktop\test", password)
+password = input('Your password is: ')
+foldersScaning(r"C:\Users\Карина\Desktop\test", password)
